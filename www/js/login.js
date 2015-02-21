@@ -1,4 +1,3 @@
-'use strict';
 angular.module('login', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/login', {
@@ -6,5 +5,7 @@ angular.module('login', ['ngRoute'])
 		controller: 'LoginController'
 	});
 }])
-.controller('LoginController', [function() {
+.controller('LoginController', [function($scope) {
+	'use strict';
+
 }]);
