@@ -27,3 +27,6 @@ proguard/
 *.log
 
 platforms/android/
+
+#bower
+bower_components

@@ -7,5 +7,7 @@ angular.module('login', ['ngRoute'])
 }])
 .controller('LoginController', [function($scope) {
 	'use strict';
-
+	$scope.goToEvent = function(){
+		alert('here');
+	};
 }]);
