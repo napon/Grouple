@@ -26,4 +26,7 @@ proguard/
 # Log Files
 *.log
 
-platforms/android/
+#bower
+bower_components
+
+platforms/
