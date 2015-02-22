@@ -5,13 +5,14 @@
     <div>
     
     <div id="map-canvas"><img src="img/map.png"/></div>
-    <button type="add" ng-click="createevent()">Add an event</button>
+    <button type="add" ng-click="createevent()">ADD AN EVENT</button>
 
-
-    <div class="gevent col-sm-6" ng-repeat="event in events">
+    
+    <div class="gevent" ng-repeat="event in events">
       <h4 class="event-name">{{event.name}}</h4>
       <div class="event-description">{{event.description}}</div>
       <div class="event-date">{{event.startTime}} to {{event.endTime}}</div>
+    
     </div>
 
     

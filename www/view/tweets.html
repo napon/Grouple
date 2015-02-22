@@ -2,9 +2,13 @@
       <li role="presentation"><a ng-click="findgroups()">Find Groups</a></li>
       <li role="presentation" class="active"> <a ng-click="instafeed()">What's New</a></li>
 </ul>
-<ul>
-	<li ng-repeat="tweet in tweets">
-		{{ tweet.message }}	- {{ tweet.time }}<br>
-		<strong>{{ tweet.user }}</strong>
-	</li>
-</ul>
+
+<div id="map-canvas2"><img src="img/vancouver.jpg"/></div>
+<div class="container">
+	<ul>
+		<li ng-repeat="tweet in tweets">
+			{{ tweet.message }}	- {{ tweet.time }}<br>
+			<strong>{{ tweet.user }}</strong>
+		</li>
+	</ul>
+</div>
