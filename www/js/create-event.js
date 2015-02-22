@@ -1,6 +1,5 @@
 
-angular.module("grouple").controller("EventController", ["$scope", 
-	"$firebase", function ($scope, $firebase) {
+angular.module("grouple").controller("EventController", function ($scope) {
 		var ref = new Firebase("https://grouple.firebaseio.com/events");
 
 		$scope.addEvent = function() {
@@ -14,4 +13,4 @@ angular.module("grouple").controller("EventController", ["$scope",
 					  lon: $scope.inputLon,
 					  tags: $scope.inputTags});
 		};
-}]);
+});

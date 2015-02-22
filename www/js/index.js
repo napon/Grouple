@@ -16,14 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
  angular.module('grouple', ['ngRoute', 'firebase']).
    config(['$routeProvider', function($routeProvider) {
-   	   $routeProvider.when('/events', {
-   	   	templateUrl: 'create-event.html',
-   	   	controller: 'EventController'
-   	   });
-       $routeProvider.otherwise({redirectTo: '/events'});
+   	    $routeProvider.when('/events', {
+   	   		templateUrl: 'create-event.html',
+   	   		controller: 'EventController'
+   	    });
+   	    $routeProvider.when('/login', {
+			templateUrl: 'view/login.html',
+			controller: 'LoginController'
+		});
+       $routeProvider.otherwise({redirectTo: '/login'});
   }]);
 // var app = {
 //     // Application Constructor
