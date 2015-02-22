@@ -1,18 +1,14 @@
-angular.module('grouple').controller('LoginController', function($scope) {
-	'use strict';
+angular.module('grouple').controller('LoginController', function($scope, $location) {
 
 	$scope.login = function() {
-		console.log("blahblah");
-
 		var ref = new Firebase("https://grouple.firebaseio.com/");
-		console.log('hi');
-		ref.authWithOAuthPopup("facebook", function(error, authData) {
+		ref.authWithOAuthPopup("facebook", function(error, auth) {
 		  if (error) {
 		    console.log("Login Failed!", error);
 		  } else {
-		    console.log("Authenticated successfully with payload:", authData);
+		  	console.log("Authentication worked!");
 		  }
 		});
+		$location.path("/map");
 	};
-
-});
+});	
