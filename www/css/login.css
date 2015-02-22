@@ -1,15 +1,17 @@
-	div h1 {
-		color: white;
-	}    
+div h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+}    
 
 
-	#LoginButton {
-	    text-align: center;
-   		margin: 0-auto;
-	}
+#LoginButtonDiv {
+    text-align: center;
+	width: 50%;
+	margin: 50px auto;
+}
 
-	.button {
-    	
-  		position: relative;
-  		margin: 0-auto;
-	}
+.login-button {
+	height: 60px;
+	border-radius: 10px;
+}
