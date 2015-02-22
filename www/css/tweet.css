@@ -1,0 +1,25 @@
+#map-canvas2 {
+	height: 400px;
+	overflow: hidden;
+}
+#map-canvas2 > img {
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container > ul > li {
+	background: white;
+	padding: 10px;
+	margin: 5px;
+}
+
+.container {
+	margin-right: 50px;
+}
+
+li:hover {
+	cursor: pointer;
+}
