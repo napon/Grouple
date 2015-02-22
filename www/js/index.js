@@ -17,9 +17,13 @@
  * under the License.
  */
 
- angular.module('grouple', ['ngRoute', 'login']).
+ angular.module('grouple', ['ngRoute', 'firebase']).
    config(['$routeProvider', function($routeProvider) {
-       $routeProvider.otherwise({redirectTo: '/login'});
+   	   $routeProvider.when('/events', {
+   	   	templateUrl: 'create-event.html',
+   	   	controller: 'EventController'
+   	   });
+       $routeProvider.otherwise({redirectTo: '/events'});
   }]);
 // var app = {
 //     // Application Constructor
