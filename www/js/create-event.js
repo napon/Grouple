@@ -1,5 +1,5 @@
 
-angular.module("grouple").controller("EventController", function ($scope) {
+angular.module("grouple").controller("EventController", function ($scope, $location) {
 		var ref = new Firebase("https://grouple.firebaseio.com/events");
 
 		$scope.addEvent = function() {
@@ -12,5 +12,6 @@ angular.module("grouple").controller("EventController", function ($scope) {
 					  lat: $scope.inputLat,
 					  lon: $scope.inputLon,
 					  tags: $scope.inputTags});
+			$location.path("/map");
 		};
 });
