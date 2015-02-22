@@ -1,0 +1,21 @@
+	<head>
+	    <link type="text/css" rel="stylesheet" href="css/login.css"/>
+
+	div h1 {
+		color: white;
+	}    
+
+
+	#LoginButton {
+	    text-align: center;
+   		margin: 0-auto;
+	}
+
+	.button {
+    	
+  		position: relative;
+  		margin: 0-auto;
+	}
+
+	</head>
+	
