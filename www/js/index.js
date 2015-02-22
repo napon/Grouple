@@ -19,13 +19,19 @@
 
  angular.module('grouple', ['ngRoute']).
    config(['$routeProvider', function($routeProvider) {
+   	    $routeProvider.when('/login', {
+			templateUrl: 'view/login.html',
+			controller: 'LoginController'
+		});
        $routeProvider.when('/tweets', {
 		templateUrl: 'view/tweets.html',
 		controller: 'CommunityTweetController'
 		});
-		// $routeProvider.otherwise({redirectTo: '/login'});
-       $routeProvider.otherwise({redirectTo: '/tweets'});
-
+   	    $routeProvider.when('/events', {
+   	   		templateUrl: 'create-event.html',
+	   		controller: 'EventController'
+   	    });
+       $routeProvider.otherwise({redirectTo: '/login'});
   }]);
 // var app = {
 //     // Application Constructor

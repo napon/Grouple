@@ -1,10 +1,3 @@
-// angular.module('tweet', ['ngRoute'])
-// .config(['$routeProvider', function($routeProvider) {
-// 	$routeProvider.when('/tweets', {
-// 		templateUrl: 'view/tweets.html',
-// 		controller: 'CommunityTweetController'
-// 	});
-// }])
 angular.module('grouple')
 .controller('CommunityTweetController', function($scope, $http) {
 	'use strict';
