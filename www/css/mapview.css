@@ -1,5 +1,27 @@
-.angular-google-map-container { height: 400px; }
+#map-canvas {
+	height: 400px;
+	overflow: hidden;
+}
+#map-canvas > img {
+	width: 100%;
+}
 
 p {
 	color: red;
+}
+
+.gevent {
+	margin: 5px;
+	padding: 5px;
+	background: white;
+	border: 1px;
+}
+
+button {
+	margin-top: 5px;
+	width: 100%;
+	height: 30px;
+	z-index: 2;
+	background: red;
+	color: white;
 }

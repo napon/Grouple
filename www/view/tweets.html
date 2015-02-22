@@ -1,3 +1,7 @@
+<ul class="nav nav-tabs nav-justified">
+      <li role="presentation"><a ng-click="findgroups()">Find Groups</a></li>
+      <li role="presentation" class="active"> <a ng-click="instafeed()">What's New</a></li>
+</ul>
 <ul>
 	<li ng-repeat="tweet in tweets">
 		{{ tweet.message }}	- {{ tweet.time }}<br>
