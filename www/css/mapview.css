@@ -22,7 +22,7 @@ button {
 	width: 100%;
 	height: 30px;
 	z-index: 2;
-	background: red;
+	background: grey;
 	color: white;
 	outline: none;
 }
