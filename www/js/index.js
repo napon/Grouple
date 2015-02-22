@@ -28,7 +28,7 @@
 		controller: 'CommunityTweetController'
 		});
    	    $routeProvider.when('/events', {
-   	   		templateUrl: 'create-event.html',
+   	   		templateUrl: 'view/create-event.html',
 	   		controller: 'EventController'
    	    });
          $routeProvider.when('/map', {
