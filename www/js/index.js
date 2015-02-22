@@ -17,9 +17,15 @@
  * under the License.
  */
 
- angular.module('grouple', ['ngRoute', 'login']).
+ angular.module('grouple', ['ngRoute']).
    config(['$routeProvider', function($routeProvider) {
-       $routeProvider.otherwise({redirectTo: '/login'});
+       $routeProvider.when('/tweets', {
+		templateUrl: 'view/tweets.html',
+		controller: 'CommunityTweetController'
+		});
+		// $routeProvider.otherwise({redirectTo: '/login'});
+       $routeProvider.otherwise({redirectTo: '/tweets'});
+
   }]);
 // var app = {
 //     // Application Constructor
