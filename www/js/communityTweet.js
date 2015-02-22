@@ -29,7 +29,10 @@ angular.module('grouple')
 						tweet.time = obj.timestamp_iso;
 						tweet.message = obj.message;
 						tweet.user = obj.user;
+						tweet.mood = obj.sentiment;
 						return tweet;
+					}).sort(function(a,b) {
+						return a.mood > b.mood;
 					});
 	}
 
