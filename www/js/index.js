@@ -17,8 +17,12 @@
  * under the License.
  */
 
- angular.module('grouple', ['ngRoute', 'login']).
+ angular.module('grouple', ['ngRoute']).
    config(['$routeProvider', function($routeProvider) {
+      $routeProvider.when('/login', {
+		templateUrl: 'view/login.html',
+		controller: 'LoginController'
+	});
        $routeProvider.otherwise({redirectTo: '/login'});
   }]);
 // var app = {
