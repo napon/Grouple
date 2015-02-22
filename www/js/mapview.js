@@ -3,6 +3,10 @@ var globalevents;
 angular.module('grouple')
 .controller('mapViewController', ['$scope', '$location',
   function($scope, $location) {
+    $scope.createevent = function() {
+      $location.path('/events');
+    }
+
     $scope.findgroups = function() {
         $location.path('/map');
     };

@@ -2,28 +2,28 @@
     <h1>Create a New Event</h1>
 
     Name:<br>
-    <input type="text" ng-model="inputName"><br>
+    <input type="text" ng-model="inputName" ng-init="inputName='Event Name'"><br>
 
     Description:<br>
-    <input type="text" ng-model="inputDescrip"><br>
+    <input type="text" ng-model="inputDescrip" ng-init="inputDescrip='Event Description'"><br>
 
     Required People:<br>
-    <input type="text" ng-model="inputMaxPpl"><br>
+    <input type="text" ng-model="inputMaxPpl" ng-init="inputMaxPpl='10'"><br>
 
     Start Time:<br>
-    <input type="text" ng-model="inputStartTime"><br>
+    <input type="text" ng-model="inputStartTime" ng-init="inputStartTime='1:00PM'"><br>
 
     End Time:<br>
-    <input type="text" ng-model="inputEndTime"><br>
+    <input type="text" ng-model="inputEndTime" ng-init="inputEndTime='2:00PM'"><br>
 
     Latitude:<br>
-    <input type="text" ng-model="inputLat"><br>
+    <input type="text" ng-model="inputLat" ng-init="inputLat='0.0'"><br>
 
     Longitude:<br>
-    <input type="text" ng-model="inputLon"><br>
+    <input type="text" ng-model="inputLon" ng-init="inputLon='0.0'"><br>
 
     Tags:<br>
-    <input type="text" ng-model="inputTags"><br>
+    <input type="text" ng-model="inputTags" ng-init="inputTags='vancouver'"><br>
 
     <input type="submit" value="Add Event!" ng-click="addEvent()">
 </div>
